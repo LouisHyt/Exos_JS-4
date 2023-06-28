@@ -18,11 +18,11 @@ body{
 .container{
     display: flex;
     flex-wrap: wrap;
-    width: calc(60px * 14);
+    width: calc(60px * 15);
 }
 
 .container > .cube{
     width: 60px;
     height: 60px;
-    background-color: #4d104e;
+    cursor: pointer;
 }

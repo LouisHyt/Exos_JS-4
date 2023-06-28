@@ -13,6 +13,13 @@ window.addEventListener("keydown", (e) => {
     cube.classList.add("cube");
     let randomColor = getRandomColor();
     cube.style.backgroundColor = randomColor;
+
+    cube.addEventListener("click", function(){
+        if(cache.length < 225) return
+        this.style.backgroundColor = "black";
+    })
+
+
     container.appendChild(cube);
     cache.push(cube);
 })
